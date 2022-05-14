@@ -279,7 +279,7 @@ section{
   font-weight: 600;
 }
 .foto-personal{
-  width: 15rem;
+  width: 16rem;
   border-radius: 50%;
 }
 
@@ -306,7 +306,6 @@ section{
   margin-bottom: 2rem;
   color: var(--secundario);
 }
-
 
 .campo {
   margin-bottom: 1rem;
