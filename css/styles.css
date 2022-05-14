@@ -201,7 +201,7 @@ a {
 }
 
 .hero {
-  background-image: url(../img/hero2.jpg);
+  background-image: url(../assets/hero.jpg);
   background-size: cover;
   background-position: center;
   height: 41rem;
