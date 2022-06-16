@@ -1,0 +1,13 @@
+footer {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+  color: var(--gris-claro);
+}
+footer .sign {
+  font-family: var(--fuente-sign);
+  font-size: 1.6rem;
+  color: var(--primario);
+}
+footer .sign:hover {
+  color: var(--alter);
+}

@@ -89,6 +89,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: var(--blanco);
 }
 
 .titulo {
@@ -222,7 +223,7 @@ section{
 }
 
 /* SERVICIOS */
-.grupo-servicios {
+.grupo-servicios, .grupo-proyectos {
   margin: 0 2rem;
   display: grid;
   gap: 2rem;
@@ -369,9 +370,14 @@ section{
     flex-direction: row;
     justify-content: space-around;
   }
+  
 /* SERVICIOS */
-  .grupo-servicios {
+  .grupo-servicios{
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grupo-proyectos {
+    grid-template-columns: 1fr 1fr
   }
 
   /* SOBRE MI */

@@ -1,0 +1,72 @@
+/* fuente OpenSans y Damion */
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap");
+/* css */
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+:root {
+  --blanco: #ffffff;
+  --negro: #212121;
+  --gris: #4e4e4e;
+  --gris-claro: #a3a3a3;
+  --rojo: #fa0000;
+  --primario: #70b34f;
+  --secundario: #016325;
+  --alter: rgb(9, 201, 226);
+
+  --fuente-principal: "Open Sans", sans-serif;
+  --fuente-sign: "Damion", cursive;
+}
+html {
+  font-size: 62.5%; /* util para el manejo con rem*/
+  box-sizing: border-box; /* hack para box model*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--blanco);
+  margin: 1rem 0;
+}
+
+body {
+  font-size: 16px; /* 1rem = 10px*/
+  font-family: var(--fuente-principal);
+  color: var(--gris-claro);
+  background-color: var(--negro);
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+/* Media querys */
+
+@media (min-width: 768px) {
+  .mesa {
+    border-radius: 2rem;
+    border: 2px solid var(--blanco);
+  }
+  .computador-cartas,
+  .jugador-cartas {
+    display: flex;
+  }
+  .jugador-cartas .carta:first-of-type {
+    margin-left: 8rem;
+  }
+  .computador-cartas .carta:first-of-type {
+    margin-left: 50%;
+  }
+  .carta {
+    position: relative;
+    margin-left: -5rem;
+  }
+}

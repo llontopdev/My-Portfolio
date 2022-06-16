@@ -1,0 +1,126 @@
+:root{
+  --blanco:#ffffff;
+  --negro: #212121;
+  --gris: #4e4e4e;
+  --gris-claro: #a3a3a3;
+  --primario: #70b34f;
+
+  --start-color1: #007cf0;
+  --end-color1: #00dfd8;
+
+  --start-color2: #7928ca;
+  --end-color2: #ff0080;
+
+  --start-color3: #ff4d4d;
+  --end-color3: #f9cb28;
+
+  --fuente-principal: 'Open Sans', sans-serif;
+  --fuente-sign: 'Damion', cursive; 
+}
+
+.material-icons-outlined {
+  color: var(--primario);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+html{
+  font-size: 62.5%; /* util para el manejo con rem*/
+  box-sizing: border-box; /* hack para box model*/
+  scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;  
+  margin: 0;
+  padding: 0;
+}
+
+body{    
+  font-size: 16px; /* 1rem = 10px*/
+  font-family: var(--fuente-principal);
+  color: var(--gris-claro);
+  background-color: var(--gris);  
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+.contenedor{ 
+  background-color: var(--negro);   
+  margin: 1rem;  
+}
+
+.cabecera{  
+  font-weight: 800; 
+  padding: 1rem;
+  -webkit-text-fill-color: transparent;  
+}
+
+.cabecera .titulo{  
+  font-size: 5rem;
+  background-image: linear-gradient(90deg,var(--primario),var(--end-color1));
+  
+  /* 
+   background-image: linear-gradient(90deg,var(--start-color2),var(--end-color2));
+  background-image: linear-gradient(90deg,var(--start-color3),var(--end-color3));
+  background-image: linear-gradient(90deg,var(--primario),var(--end-color1));
+  */
+  -webkit-background-clip: text;
+}
+
+
+/* formulario */
+.formulario{
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 35rem;
+  margin: 2rem auto;
+  border: 1px solid var(--negro);
+}
+.formulario .titulo{
+  font-size: 2.5rem;
+  color: var(--blanco);
+  text-shadow: var(--negro) .1em .1em .1em;
+}
+.formulario .btn-generar{ 
+  background-color: var(--blanco);
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;  
+  margin: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--negro);
+}
+.formulario .btn-generar:hover{
+  background-color: var(--negro);
+  color: var(--blanco);
+  border: 1px solid var(--blanco);
+}
+.formulario .label{
+  padding: 1rem 2rem;  
+}
+
+/* footer */
+footer{
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--gris-claro);
+}
+footer .sign{  
+  font-family: var(--fuente-sign);
+  font-size: 1.6rem;
+  color: var(--primario);
+}
+footer .sign:hover{
+  color: var(--end-color1);
+}
+
+@media (min-width: 351px) {
+  .formulario{
+    border-radius: 2rem;
+  }  
+}

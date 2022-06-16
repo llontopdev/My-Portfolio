@@ -1,0 +1,29 @@
+.mesa {
+  background-image: url(../img/fondo-mesa.jpg);
+  max-width: 90rem;
+  height: 52rem;
+  margin: 2rem auto;
+}
+.player{
+  height: 25rem;
+}
+.jugador{
+  padding-top: 1rem;
+}
+.puntos {
+  color: var(--alter);
+}
+
+.computador-cartas,
+.jugador-cartas {
+  padding-left: 4rem;  
+}
+
+.carta {
+  width: 12rem;
+  object-fit: cover;
+
+  margin-left: -8rem;
+  border-radius: 1rem;
+  box-shadow: -3px 1px 5px rgba(22, 22, 22, 0.849);
+}

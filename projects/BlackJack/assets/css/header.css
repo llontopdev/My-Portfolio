@@ -1,0 +1,41 @@
+.titulo {
+  padding: 1rem;
+}
+.titulo h1 {
+  font-size: 3.5rem;
+}
+
+.acciones {
+  margin-top: 2rem;
+}
+.acciones .btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.acciones .btn:hover {
+  background: transparent;
+  color: var(--blanco);
+}
+
+.btn-nuevo {
+  background-color: var(--primario);
+  color: var(--blanco);
+}
+.btn-nuevo:hover {
+  border: 2px solid var(--primario);
+}
+
+.btn-pedir:hover {
+  border: 2px solid var(--blanco);
+}
+
+.btn-detener {
+  background-color: var(--rojo);
+  color: var(--blanco);
+}
+.btn-detener:hover {
+  border: 2px solid var(--rojo);
+}
+
