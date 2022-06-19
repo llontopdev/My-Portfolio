@@ -51,7 +51,7 @@ S = Spades  = Espadas
       } else if ((ptosPC >= ptosJugador) && (ptosPC <= 21)) {
         alert("Gano la Computadora");
       } else alert("Gano el jugador")
-    }, 300);
+    }, 500);
   }
 
   const pedirCarta = () => {
