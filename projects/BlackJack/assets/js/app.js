@@ -71,7 +71,7 @@ const turnoPC = (puntaje) => {
       alert("Gano la Computadora");
     } else alert("Gano el jugador")
 
-  }, 100);
+  }, 300);
 }
 
 crearBaraja();
