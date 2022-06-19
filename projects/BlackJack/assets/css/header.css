@@ -18,6 +18,10 @@
   background: transparent;
   color: var(--blanco);
 }
+.acciones .btn:disabled {
+  background-color: var(--gris);
+  color: var(--gris-claro);
+}
 
 .btn-nuevo {
   background-color: var(--primario);
@@ -38,4 +42,3 @@
 .btn-detener:hover {
   border: 2px solid var(--rojo);
 }
-
