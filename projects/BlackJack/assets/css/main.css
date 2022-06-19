@@ -4,19 +4,18 @@
   height: 52rem;
   margin: 2rem auto;
 }
-.player{
+.player {
   height: 25rem;
 }
-.jugador{
+.jugador {
   padding-top: 1rem;
 }
 .puntos {
   color: var(--alter);
 }
 
-.computador-cartas,
-.jugador-cartas {
-  padding-left: 4rem;  
+.divCartas {
+  padding-left: 4rem;
 }
 
 .carta {
